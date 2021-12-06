@@ -50,7 +50,6 @@ function splitDialogs(text, characters) {
 
         lines.forEach((line, i) => {
             if ( line.indexOf(character) >= 0 && line.indexOf(character) < character.length) {
-                debugger;
                 const repl = line.slice(character.length + 1);
                 replics += `${i + 1}) ${repl}\n`
             }
